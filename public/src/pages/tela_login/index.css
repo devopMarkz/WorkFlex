@@ -6,6 +6,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background: url('../../../assets/images/side-view-woman-meditating-with-closed-eyes.jpg');
+    background-size: cover; */
 }
 
 .principal {
