@@ -7,3 +7,18 @@
 :root {
     font-size: 62.5%;
 }
+
+body {
+    height: 100vh;
+    font-size: 1.6rem;
+}
+
+.icons {
+    width: 32px;
+    height: 32px;
+}
+
+.principal__logo {
+    width: 70%;
+    border-radius: 100%;
+}
