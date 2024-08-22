@@ -23,14 +23,14 @@ body {
     border-radius: 100%;
 }
 
-.principal__container__formulario {
+.principal__formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
-.principal__container__formulario .inputUser,
+.principal__formulario .inputUser,
 .inputSize {
     width: 70vw;
     padding: .5rem;
@@ -68,7 +68,7 @@ body {
         border-radius: 100%;
     }
 
-    .principal__container__formulario .inputUser,
+    .principal__formulario .inputUser,
     .inputSize {
         width: 30vw;
         padding: .5rem;
