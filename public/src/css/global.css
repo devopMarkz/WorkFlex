@@ -18,3 +18,7 @@ body {
     width: 32px;
     height: 32px;
 }
+
+.teste {
+    grid-template-columns: 1fr;
+}
