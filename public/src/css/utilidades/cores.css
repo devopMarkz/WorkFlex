@@ -8,7 +8,8 @@
   --cor-p6: #3AD7AE;
   --cor-p7: #46E9AE;
   --cor-p8: #54FEAE;
-  --cor-p9: #000000;
+  --cor-p9: #37C281;
+  --cor-p10: #000000;
 }
 
 .cor-p0 {
@@ -49,4 +50,8 @@
 
 .cor-p9 {
   color: var(--cor-p9);
+}
+
+.cor-p10 {
+  color: var(--cor-p10);
 }
