@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./public/src/css/global.css">
-    <link rel="stylesheet" href="./public/src/pages/tela_login/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./public/src/css/style.css">
+    <title>WorkFlex</title>
 </head>
-<body>
 
-    <main class="principal">
-        <img src="./public/assets/logos/workflex_logo.png" alt="Logo do Aplicativo" class="principal__logo">
-            
-        <form action="" method="post" class="principal__formulario">
-            <input type="email" name="email" id="email" placeholder="Email:" class="inputUser inputSize" required>
-            <input type="password" name="senha" id="senha" placeholder="Senha:" class="inputUser inputSize" required>
-            <input type="submit" id="submit" value="Prosseguir" class="log-user inputSize">
-            <a href="#" class="register-user inputSize">Cadastre-se</a>
+<body class="login-background">
+    <main class="container tela-login">
+        <div class="logo">
+            <img src="./public/assets/logos/LOGO.svg" alt="">
+        </div>
+        <span class="logo-mensagem font-1-s-b cor-p0">
+            Faça login na sua conta WorkFlex.
+        </span>
+
+        <form class="tela-login-form" id="tela-login-form">
+            <div class="email">
+                <img src="./public/assets/icons/user-icon.svg" alt="" width="32px" height="32px" class="form-icon">
+                <input type="text" class="input-teste" for="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="senha">
+                <img src="./public/assets/icons/password-icon.svg" alt="" width="32px" height="32px" class="form-icon">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+            </div>
         </form>
-
+        <button class="login-btn font-1-s-b cor-p0">
+            Entrar
+        </button>
+        <span class="esqueceu-senha font-1-s cor-p0"><a href="#">Esqueceu a senha?</a></span>
+        <span class="criar-conta font-1-s">Não possui uma conta? <span class="">crie uma.</span></span>
     </main>
 
 </body>
+
 </html>

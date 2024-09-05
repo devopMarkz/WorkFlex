@@ -1,0 +1,79 @@
+.login-background {
+  height: 100vh;
+  background: linear-gradient(#38e7f0, #41ba82);
+}
+
+.tela-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding-top: 100px;
+}
+
+.logo {
+  padding-bottom: 10px;
+}
+
+.tela-login-form {
+  display: grid;
+  gap: 20px;
+  padding-top: 60px;
+}
+
+.email,
+.senha {
+  display: flex;
+  gap: 10px;
+}
+
+.form-icon {
+  margin-left: -40px;
+}
+
+#email,
+#senha {
+  width: 210px;
+  height: 30px;
+  background: transparent;
+  border: var(--cor-p0) 2px solid;
+  border-radius: 60px;
+  outline: none;
+}
+
+.input-teste:focus {
+  border: aqua 2px solid;
+  padding: 60px;
+}
+
+#email::placeholder,
+#senha::placeholder {
+  font: 400 0.75rem/1.5 "Poppins", sans-serif;
+  padding-left: 20px;
+  color: var(--cor-p0);
+  opacity: 80%;
+}
+
+.login-btn {
+  margin-top: 28px;
+  width: 140px;
+  height: 30px;
+  background-color: var(--cor-p7);
+  border-radius: 60px;
+  border: none;
+}
+
+.esqueceu-senha {
+  padding-top: 20px;
+  text-decoration: none;
+  color: var(--cor-p0);
+}
+
+.criar-conta {
+  padding-top: 40px;
+  color: var(--cor-p0);
+}
+
+.criar-conta span {
+  color: #012aff;
+}

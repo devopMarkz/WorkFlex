@@ -1,0 +1,14 @@
+/* Estilizações Globais */
+
+@import "./global/footer.css";
+@import "./global/header.css";
+@import "./global/global.css";
+
+/* Utilidades */
+
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografias.css";
+
+/* Paginas */
+
+@import "./login/login.css";
