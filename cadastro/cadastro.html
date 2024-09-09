@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./.././public/src/css/style.css">
+  <title>WorkFlex - Cadastro</title>
+</head>
+
+<body class="gradient-bg">
+  <main class="container tela-cadastro">
+    <div class="logo-cadastro">
+      <img src="../public/assets/logos/LOGO-MENOR.svg" alt="" width="64px" height="64px">
+    </div>
+    <span class="font-1-s cadastro-subtitulo cor-p0">Preencha os campos abaixo e torne-se
+      um membro WorkFlex.</span>
+    <form class="tela-cadastro-form">
+      <div class="nome">
+        <input type="text" class="nome-input" placeholder="Nome" id="nome">
+      </div>
+      <div class="idade-altura-container">
+        <div class="idade">
+          <input type="number" class="input-idade-altura" placeholder="Idade" id="idade">
+        </div>
+        <div class="altura">
+          <input type="number" class="input-idade-altura" placeholder="Altura" id="altura">
+        </div>
+      </div>
+      <div class="genero">
+        <span class="font-1-s cor-p0 teste">Sexo:</span>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genero" class="reset-input" value="masculino">
+            <span class="font-1-s cor-p0">Masculino</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genero" class="reset-input" value="feminino">
+            <span class="font-1-s cor-p0">Feminino</span>
+          </label>
+        </div>
+      </div>
+      </div>
+      <div class="funcionario">
+        <select name="funcionario-tipo" class="funcionario-tipo font-1-s" id="funcionario-id">
+            <option value="" disabled selected>Funcionário tipo</option>
+            <option value="efetivo" class="cor-p10">Efetivo</option>
+            <option value="aprendiz" class="cor-p10">Aprendiz</option>
+        </select>
+      </div>
+      <div class="email">
+        <input type="text" class="email-input cadastro-i" for="email" name="email" id="email" placeholder="Email">
+      </div>
+      <div class="senha">
+        <input type="password" class="senha-input cadastro-i" name="senha" id="senha" placeholder="Senha">
+      </div>
+    </form>
+    <input type="submit" class="login-btn font-1-s-b cor-p0">
+    </input>
+  </main>
+</body>
+
+</html>

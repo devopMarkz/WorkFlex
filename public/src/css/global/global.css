@@ -8,6 +8,19 @@ input {
   display: block;
 }
 
+
+
+/* Tira as setas do input number e deixa as caixas limpas */
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 a {
   text-decoration: none;
   padding: 0;
@@ -15,6 +28,7 @@ a {
   color: inherit;
 }
 
+/* Deixa as imagens responsivas */
 img {
   max-width: 100%;
   height: auto;
