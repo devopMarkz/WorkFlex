@@ -44,6 +44,7 @@
   border-radius: 60px;
   outline: none;
   padding-left: 8px;
+  color: var(--cor-p0);
 }
 
 .email-input:focus, .senha-input:focus {

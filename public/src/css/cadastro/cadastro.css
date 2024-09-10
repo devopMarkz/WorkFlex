@@ -83,6 +83,7 @@
   width: 80px;
 }
 
+
 .radio span, .tela-cadastro-form input::placeholder, .nome-input::placeholder {
   color: var(--cor-p0);
   opacity: 80%;
@@ -114,11 +115,12 @@
   top: 0;
   left: 0;
   background-color: var(--cor-p0);
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .radio label input[type=radio]:checked + span{
   color: var(--cor-p10);
+  transition: 0.5s;
 }
 
 /* Select de funcionario */
@@ -137,5 +139,8 @@
 /* Ajusta os inputs de email e senha para o tamanho dos inputs padroes da tela de cadastro */
 .cadastro-i {
   width: 260px;
-  opacity: 80%;
+}
+
+.email-input:focus, .senha-input:focus, .funcionario-tipo:focus, .nome-input:focus, #idade:focus, #altura:focus {
+  border: var(--cor-p4) 2px solid;
 }
