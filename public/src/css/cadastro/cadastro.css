@@ -1,0 +1,146 @@
+/* Container principal da tela cadastro */
+.tela-cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+
+/* Subtitulo da logo */
+.cadastro-subtitulo {
+  max-width: 30ch;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+/* Container do formulario */
+.tela-cadastro-form {
+  display: grid;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+/* Estilização do input de nome */
+.nome-input {
+  width: 260px;
+  height: 30px;
+  background: transparent;
+  border: var(--cor-p0) 2px solid;
+  border-radius: 60px;
+  outline: none;
+  font: 400 0.75rem/1.5 "Poppins", sans-serif;
+  padding-left: 8px;  
+  color: var(--cor-p0);
+}
+
+/* Container e estilização dos inputs de idade e altura */
+
+.input-idade-altura {
+  width: 120px;
+  height: 30px;
+  background: transparent;
+  border: var(--cor-p0) 2px solid;
+  border-radius: 60px;
+  outline: none;
+  font: 400 0.75rem/1.5 "Poppins", sans-serif;
+  padding-left: 8px;
+  color: var(--cor-p0);
+}
+
+.idade-altura-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Container da area generos */
+.genero {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.genero::after {
+  content: "";
+  clear: both;
+}
+
+/* Reseta os valores padrões do input radio */
+.reset-input {
+  all: unset;
+}
+
+/* Container dos inputs radios da pagina cadastro */
+.radio {
+  margin: 0px;
+  border: 2px solid var(--cor-p0);
+  border-radius: 60px;
+  box-sizing: border-box;
+  float: left;
+  height: 30px;
+  position: relative;
+  width: 80px;
+}
+
+
+.radio span, .tela-cadastro-form input::placeholder, .nome-input::placeholder {
+  color: var(--cor-p0);
+  opacity: 80%;
+}
+
+/* Estilização da label que envolve o genero da pessoa */
+.radio label {
+  background-color: var(--cor-p0) no-repeat center center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.radio label span {
+  z-index: 1;
+}
+
+/* Estilização da label quando checada que envolve os generos */
+.radio label input[type="radio"]:checked {
+  all: unset;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--cor-p0);
+  border-radius: 12px;
+}
+
+.radio label input[type=radio]:checked + span{
+  color: var(--cor-p10);
+  transition: 0.5s;
+}
+
+/* Select de funcionario */
+.funcionario-tipo {
+  display: flex;
+  width: 260px;
+  height: 30px;
+  border: var(--cor-p0) 2px solid;
+  border-radius: 60px;
+  outline: none;
+  color: var(--cor-p0);
+  padding-left: 8px;
+  background: transparent url(../../../assets/icons/seta-baixo.svg) no-repeat center right;
+}
+
+/* Ajusta os inputs de email e senha para o tamanho dos inputs padroes da tela de cadastro */
+.cadastro-i {
+  width: 260px;
+}
+
+.email-input:focus, .senha-input:focus, .funcionario-tipo:focus, .nome-input:focus, #idade:focus, #altura:focus {
+  border: var(--cor-p4) 2px solid;
+}

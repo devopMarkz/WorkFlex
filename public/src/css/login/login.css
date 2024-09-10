@@ -1,26 +1,30 @@
-.login-background {
+/* Background da tela */
+.gradient-bg {
   height: 100vh;
   background: linear-gradient(#38e7f0, #41ba82);
 }
 
+/* Container principal da tela de login */
 .tela-login {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
 .logo {
   padding-bottom: 10px;
 }
 
+/* Container do formulario da tela de login */
 .tela-login-form {
   display: grid;
   gap: 20px;
   padding-top: 60px;
 }
 
+/* Div dos inputs email e senha */
 .email,
 .senha {
   display: flex;
@@ -39,6 +43,8 @@
   border: var(--cor-p0) 2px solid;
   border-radius: 60px;
   outline: none;
+  padding-left: 8px;
+  color: var(--cor-p0);
 }
 
 .email-input:focus, .senha-input:focus {
@@ -48,7 +54,6 @@
 #email::placeholder,
 #senha::placeholder {
   font: 400 0.75rem/1.5 "Poppins", sans-serif;
-  padding-left: 20px;
   color: var(--cor-p0);
   opacity: 80%;
 }

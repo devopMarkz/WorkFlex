@@ -1,0 +1,22 @@
+.nav-bg {
+  background-color: black;
+}
+
+.menu-superior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0px;
+}
+
+.menu-superior li {
+  display: flex;
+  flex-basis: 130px;
+  background-color: brown;
+  justify-content: center;
+}
+
+.menu-superior a {
+  background-color: blue;
+}
