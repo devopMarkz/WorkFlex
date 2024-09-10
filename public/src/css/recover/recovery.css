@@ -1,0 +1,28 @@
+.tela-recovery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
+  text-align: center;
+}
+
+.recovery-subtitulo {
+  margin-top: 20px;
+  max-width: 30ch;
+}
+
+.recovery-email {
+  display: flex;
+  align-content: center;
+  margin-top: 60px;
+  gap: 10px;
+}
+
+.recovery-email img {
+  margin-left: -20px;
+}
+
+.voltar-login {
+  margin-top: 10px;
+  color: #012aff;
+}

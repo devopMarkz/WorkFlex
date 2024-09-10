@@ -12,4 +12,5 @@
 /* Paginas */
 
 @import "./login/login.css";
-@import "./cadastro/cadastro.css"
+@import "./cadastro/cadastro.css";
+@import "./recover/recovery.css"
