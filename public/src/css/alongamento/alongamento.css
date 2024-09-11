@@ -32,3 +32,17 @@
   width: 100%;
   transition: 0.3s;
 }
+
+.gradient-sub-nav {
+  background: linear-gradient(to bottom, #0A8EAF 95%, #047E9C 95%);
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-nav a {
+  margin: 4px 10px;
+}
