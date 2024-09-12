@@ -88,9 +88,14 @@
   border: none;
 }
 
+.enviar-btn:hover {
+  background-color: var(--cor-p9);
+  transition: 0.2s;
+}
+
 .nav-inferior {
   display: flex;
-  width: 100%;
+  width: 375px;
   position: absolute;
   bottom: 0;
 }
@@ -100,5 +105,8 @@
   align-items: center;
   gap: 60px;
   margin: auto;
-  padding: 8px 0px;
+}
+
+.menu-inferior a {
+  padding: 8px 4px;
 }
