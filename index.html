@@ -20,7 +20,7 @@
             Faça login na sua conta WorkFlex.
         </span>
 
-        <form class="tela-login-form" id="tela-login-form">
+        <form action="login_usuario.php" class="tela-login-form" id="tela-login-form" method="post">
             <div class="email">
                 <img src="./public/assets/icons/user-icon.svg" alt="" width="32px" height="32px" class="form-icon">
                 <input type="text" class="email-input" for="email" name="email" id="email" placeholder="Email">
@@ -29,8 +29,11 @@
                 <img src="./public/assets/icons/password-icon.svg" alt="" width="32px" height="32px" class="form-icon">
                 <input type="password" class="senha-input" name="senha" id="senha" placeholder="Senha">
             </div>
+
+            <!-- Esse input estava fora do form e coloquei para dentro -->
+            <input type="submit" class="login-btn font-1-s-b cor-p0">  
         </form>        
-        <input type="submit" class="login-btn font-1-s-b cor-p0">
+        
         </input>
         <span class="esqueceu-senha font-1-s cor-p0"><a href="#">Esqueceu a senha?</a></span>
         <span class="criar-conta font-1-s">Não possui uma conta? <a href="">crie uma.</a></span>
