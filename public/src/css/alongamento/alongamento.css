@@ -94,16 +94,16 @@
 }
 
 .nav-inferior {
-  display: flex;
-  width: 375px;
   position: absolute;
+  width: 375px;
   bottom: 0;
+  align-items: center;
 }
 
 .menu-inferior {
   display: flex;
   align-items: center;
-  gap: 60px;
+  justify-content: space-around;
   margin: auto;
 }
 
