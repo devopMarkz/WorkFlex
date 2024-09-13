@@ -6,9 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"]; // Captura o email do formulário
     $senha = $_POST["senha"]; // Captura a senha do formulário
 
-    $servername = "workflex";
+    $servername = "localhost";
     $username = "root";
-    $password = "123";
+    $password = "";
     $dbname = "workflex";
 
     // Criar conexão
