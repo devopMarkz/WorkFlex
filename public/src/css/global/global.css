@@ -44,3 +44,18 @@ img {
   max-width: 375px;
   margin: 0 auto;
 }
+
+.btn {
+  margin-top: 28px;
+  width: 140px;
+  height: 30px;
+  background-color: var(--cor-p7);
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--cor-p9);
+  transition: 0.2s;
+}
