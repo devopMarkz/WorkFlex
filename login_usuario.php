@@ -1,5 +1,4 @@
 <?php
-
 // Verifica se os campos foram submetidos via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Captura os dados do formulário
@@ -32,8 +31,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verifica a senha
         if ($senha === $usuario['Senha']) {
-            session_start();
-            $_SESSION['email'] = $email;
+            session_start(); // Iniciar sessão
+            
+            // Armazena os dados relevantes do usuário na sessão
+            $_SESSION['id_Usuario'] = $usuario['id_Usuario']; // Armazena o ID do usuário
+            $_SESSION['nome'] = $usuario['Nome']; // Armazena o nome do usuário
+            $_SESSION['email'] = $usuario['Email']; // Armazena o email do usuário
+            $_SESSION['tipo_usuario'] = $usuario['Tipo_Usuario_idTipoUsuario']; // Tipo de usuário (Aprendiz ou Efetivo)
+
             // Senha correta - redirecionar para a página "alongamento.html" com caminho relativo
             header("Location: ./alongamento/alongamento.html");
             exit();
@@ -52,5 +57,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
     $conn->close();
 }
-
 ?>

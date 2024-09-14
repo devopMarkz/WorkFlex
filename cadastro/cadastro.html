@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,42 +14,41 @@
     </div>
     <span class="font-1-s cadastro-subtitulo cor-p0">Preencha os campos abaixo e torne-se
       um membro <b>WorkFlex</b>.</span>
-    <form class="tela-cadastro-form">
+    <form class="tela-cadastro-form" method="POST" action="cadastra_usuario.php">
       <div class="nome">
-        <input type="text" class="nome-input" placeholder="Nome" id="nome">
+        <input type="text" class="nome-input" placeholder="Nome" id="nome" name="nome">
       </div>
       <div class="idade-altura-container">
         <div class="idade">
-          <input type="number" class="input-idade-altura" placeholder="Idade" id="idade">
+          <input type="number" class="input-idade-altura" placeholder="Idade" id="idade" name="idade">
         </div>
         <div class="altura">
-          <input type="number" class="input-idade-altura" placeholder="Altura" id="altura">
-        </div>
+          <input type="text" class="input-idade-altura" placeholder="Altura" id="altura" name="altura">
+        </div>          
       </div>
       <div class="peso">
-        <input type="text" class="peso-input" placeholder="0 Kg" id="peso">
+        <input type="text" class="peso-input" placeholder="0 Kg" id="peso" name="peso">
       </div>
       <div class="genero">
         <span class="font-1-s cor-p0 teste">Sexo:</span>
         <div class="radio">
           <label>
-            <input type="radio" name="genero" class="reset-input" value="masculino">
+            <input type="radio" name="sexo" class="reset-input" value="Masculino">
             <span class="font-1-s cor-p0">Masculino</span>
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="genero" class="reset-input" value="feminino">
+            <input type="radio" name="sexo" class="reset-input" value="Feminino">
             <span class="font-1-s cor-p0">Feminino</span>
           </label>
         </div>
       </div>
-      </div>
       <div class="funcionario">
-        <select name="funcionario-tipo" class="funcionario-tipo font-1-s" id="funcionario-id" required>
-            <option value="" disabled selected>Funcionário tipo</option>
-            <option value="2" class="cor-p10">Efetivo</option>
-            <option value="1" class="cor-p10">Aprendiz</option>
+        <select name="funcionario-tipo" class="funcionario-tipo font-1-s" id="funcionario-id">
+          <option value="" disabled selected>Funcionário tipo</option>
+          <option value="2" class="cor-p10">Efetivo</option>
+          <option value="1" class="cor-p10">Aprendiz</option>
         </select>
       </div>
       <div class="email">
@@ -59,10 +57,8 @@
       <div class="senha">
         <input type="password" class="senha-input cadastro-i" name="senha" id="senha" placeholder="Senha">
       </div>
+      <input type="submit" class="login-btn font-1-s-b cor-p0">
     </form>
-    <input type="submit" class="login-btn font-1-s-b cor-p0">
-    </input>
   </main>
 </body>
-
 </html>
