@@ -2,9 +2,10 @@
 .tela-cadastro {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  padding-top: 80px;
 }
 
 /* Subtitulo da logo */
@@ -23,6 +24,18 @@
 
 /* Estilização do input de nome */
 .nome-input {
+  width: 260px;
+  height: 30px;
+  background: transparent;
+  border: var(--cor-p0) 2px solid;
+  border-radius: 60px;
+  outline: none;
+  font: 400 0.75rem/1.5 "Poppins", sans-serif;
+  padding-left: 8px;  
+  color: var(--cor-p0);
+}
+
+.peso-input {
   width: 260px;
   height: 30px;
   background: transparent;
