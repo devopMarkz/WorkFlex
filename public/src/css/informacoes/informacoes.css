@@ -1,0 +1,60 @@
+/* Container do conteudo da pagina */
+.container-informacoes {
+  display: grid;
+  height: 85vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.info-titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container do formulario */
+.form-container {
+  display: grid;
+  grid-template-areas: 
+  "nome nome"
+  "idade peso"
+  "altura genero"
+  "funcionario funcionario"
+  ;
+  gap: 10px;
+}
+
+.form-container label {
+  color: #6f6f6f;
+}
+
+.nome-item {
+  grid-area: nome;
+}
+
+.idade-item {
+  grid-area: idade;
+}
+
+.peso-item {
+  grid-area: peso;
+}
+
+.altura-item {
+  grid-area: altura;
+}
+
+.genero-item {
+  grid-area: genero;
+}
+
+.funcionario-item {
+  grid-area: funcionario;
+}
+
+/* Estilo padrao dos inputs de formulario */
+.input-style {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #d9d9d9;
+}
