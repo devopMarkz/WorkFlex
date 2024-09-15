@@ -40,15 +40,20 @@
   <main class="aviso-container">
     <div class="aviso-conteudo">
       <h1 class="aviso-titulo font-1-m-b">Aviso</h1>
-        <img src="../public/assets/icons/water-bottles-icon.svg" alt="" class="aviso-img">
-        <span class="font-1-s-b">1.000ML</span>
+      <img src="../public/assets/icons/water-bottles-icon.svg" alt="" class="aviso-img">
+      <span class="font-1-s-b">400ML</span>
       <div class="aviso">
         <input type="checkbox" name="aviso" id="aviso" class="checkbox-aviso">
-        <label for="aviso" class="font-1-s-b">Já bebeu a quantidade minima de água para o próximo exercício?</label>
+        <label for="aviso" class="font-1-s-b">Já bebeu a quantidade mínima de água para o próximo exercício?</label>
       </div>
-      <input type="submit" value="Prosseguir" class="btn font-1-s-b cor-p10" id="prosseguir-btn">
+      <!-- Formulário -->
+      <form action="consumir_agua.php" method="post">
+        <input type="hidden" name="quantia" value="400"> <!-- Quantidade fixa -->
+        <input type="hidden" name="idUsuario" value="1"> <!-- ID do usuário (ajuste conforme necessário) -->
+        <input type="submit" value="Prosseguir" class="btn font-1-s-b cor-p10" id="prosseguir-btn">
+      </form>
     </div>
-  </main>
+  </main>    
   <footer>
     <nav class="nav-bg nav-inferior">
       <ul class="menu-inferior">
