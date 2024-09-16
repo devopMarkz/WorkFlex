@@ -1,0 +1,41 @@
+.progresso-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.progresso-pausa {
+  display: grid;
+  max-width: 400px;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.progresso-span {
+  display: block;
+  text-align: center;
+}
+
+.progresso-barra {
+  margin-top: 12px;
+  width: 100px;
+  height: 10px;
+  border-radius: 4px;
+  border: 2px solid var(--cor-p1);
+}
+
+.progresso-porcentagem {
+  padding-top: 30px;
+  text-align: left;
+}
+
+.incompleto {
+  background: transparent
+}
+
+.completo {
+  background-color: var(--cor-p3);
+}
