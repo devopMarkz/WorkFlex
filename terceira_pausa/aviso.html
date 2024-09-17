@@ -8,34 +8,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../public/src/css/style.css">
-  <title>WorkFlex - Avis</title>
+  <title>WorkFlex - Aviso</title>
 </head>
 
 <body class="container">
   <header class="container">
     <nav class="nav-bg">
       <ul class="menu-superior">
-        <a href="../aviso/aviso.html" class="menu-s-item font-2-s cor-p0">
+        <a href="../agua/agua.html" class="menu-s-item font-2-s cor-p0">
           <li>Água</li>
         </a>
-        <a href="../alongamento/alongamento.html" class="menu-s-item font-2-s cor-p0">
+        <a href="../primeira_pausa/alongamento.html" class="menu-s-item font-2-s cor-p0">
           <li>Alongamento</li>
         </a>
-        <a href="../meditacao/meditacao.html" class="menu-s-item font-2-s cor-p0">
+        <a href="../segunda_pausa/meditacao.html" class="menu-s-item font-2-s cor-p0">
           <li>Meditação</li>
         </a>
       </ul>
     </nav>
-  <nav class="gradient-sub-nav">
-    <ul class="sub-nav">
-      <a href="">
-        <li><img src="../public/assets/icons/seta-esquerda.svg" alt="" width="18" height="18"></li>
-      </a>
-      <a href="">
-        <li><img src="../public/assets/icons/seta-direita.svg" alt="" width="18" height="18"></li>
-      </a>
-    </ul>
-  </nav>
+    <nav class="gradient-sub-nav">
+      <ul class="sub-nav">
+        <a href="">
+          <li><img src="../public/assets/icons/seta-esquerda.svg" alt="" width="18" height="18"></li>
+        </a>
+        <a href="">
+          <li><img src="../public/assets/icons/seta-direita.svg" alt="" width="18" height="18"></li>
+        </a>
+      </ul>
+    </nav>
   </header>
   <main class="aviso-container">
     <div class="aviso-conteudo">
@@ -50,28 +50,29 @@
       <form action="consumir_agua.php" method="post">
         <input type="hidden" name="quantia" value="400"> <!-- Quantidade fixa -->
         <input type="hidden" name="idUsuario" value="1"> <!-- ID do usuário (ajuste conforme necessário) -->
-        <input type="submit" value="Prosseguir" class="btn font-1-s-b cor-p10" id="prosseguir-btn">
+        <input type="submit" value="Prosseguir" class="btn font-1-s-b cor-p10" id="prosseguir-btn" href="../segunda_pausa/meditacao.html">
       </form>
     </div>
   </main>
   <footer>
     <nav class="nav-bg nav-inferior">
       <ul class="menu-inferior">
-        <a href="#">
+        <a href="../user_infos/informacoes.html">
           <li><img src="../public/assets/icons/user-icon.svg" width="24" height="24"></li>
         </a>
-        <a href="#" width="24" height="24">
+        <a href="../progresso/progresso.html" width="24" height="24">
           <li><img src="../public/assets/icons/graphic-icon.svg" alt=""></li>
         </a>
-        <a href="#" width="24" height="24">
+        <a href="../agua/agua.html" width="24" height="24">
           <li><img src="../public/assets/icons/water-icon.svg" alt=""></li>
         </a>
-        <a href="#" width="24" height="24">
+        <a href="../index.html" width="24" height="24">
           <li><img src="../public/assets/icons/logout-icon.svg" alt=""></li>
         </a>
       </ul>
     </nav>
   </footer>
+  <script src="../scripts/script.js"></script>
 </body>
 
 </html>

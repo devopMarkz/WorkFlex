@@ -35,6 +35,10 @@
   transition: 0.3s;
 }
 
+.menu-superior a:hover::after, .menu-superior a.ativo::after {
+  width: 100%;
+}
+
 .gradient-sub-nav {
   background: linear-gradient(to bottom, #0A8EAF 95%, #047E9C 95%);
 }
