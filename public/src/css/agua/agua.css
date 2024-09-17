@@ -1,0 +1,114 @@
+.container-agua {
+  display: grid;
+  height: 70vh;
+  text-align: center;
+  justify-items: center;
+  gap: 40px;
+  align-content: center;
+  margin: 20px;
+}
+
+/* Caixa onde esta localizada a bolinha com % da agua que a pessoa bebeu */
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Div que segura o svg que esta dentro da box */
+.box .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+/* Cicrculo onde é preenchido conforme a porcentagem */
+.box .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10px;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+/* Estilo inicial do circulo de porcentagem */
+/* Esse valor será alterado com javascript conforme a pessoa for consumindo água */
+.box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 0) / 100);
+  stroke: #03a9f4;
+}
+
+/* Exemplo abaixo de como será alterado */
+/* o 25 que esta dentro de parenteses indica a porcentagem de agua que a pessoa ja tomou, logo, a funcao preenche o circulo de acordo com aquela porcentagem */
+/* .primeira-fase {
+  stroke-dashoffset: calc(440 - (440 * 25) / 100);
+  stroke: #03a9f4;
+} */
+
+/* Numero que indica a porcentagem */
+.box .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+}
+
+.box .percent .number h2 {
+  font-size: 48px;
+}
+
+.box .percent .number h2 span{
+  font-size: 24px;
+}
+
+/* Span de progresso */
+.box .text {
+  padding: 10px 0 0;
+  color: #999;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.agua-form {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.agua-input {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #d9d9d9;
+  margin-top: 10px;
+}
+
+.agua-input::placeholder {
+  margin-right: 10px;
+  text-align: right;
+  opacity: 70%;
+}

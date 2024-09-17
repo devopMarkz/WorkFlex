@@ -1,11 +1,14 @@
+/* Container da tela de progresso */
 .progresso-container {
   display: grid;
+  height: 70vh;
   align-items: center;
   justify-items: center;
   margin-top: 40px;
   gap: 40px;
 }
 
+/* Container de cada pausa da tela */
 .progresso-pausa {
   display: grid;
   max-width: 400px;
@@ -19,6 +22,7 @@
   text-align: center;
 }
 
+/* Barra de progresso da pausa */
 .progresso-barra {
   margin-top: 12px;
   width: 100px;
@@ -27,15 +31,18 @@
   border: 2px solid var(--cor-p1);
 }
 
+/* Span de porcentagem da barra */
 .progresso-porcentagem {
   padding-top: 30px;
   text-align: left;
 }
 
+/* Class para quando a barra estiver incompleta */
 .incompleto {
   background: transparent
 }
 
+/* Class para quando a barra estiver completa */
 .completo {
   background-color: var(--cor-p3);
 }
