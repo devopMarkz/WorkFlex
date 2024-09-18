@@ -16,6 +16,7 @@
   display: grid;
   grid-template-areas: 
   "nome nome"
+  "email email"
   "idade peso"
   "altura genero"
   "funcionario funcionario"
@@ -29,6 +30,10 @@
 
 .nome-item {
   grid-area: nome;
+}
+
+.email-item {
+  grid-area: email;
 }
 
 .idade-item {
@@ -55,6 +60,8 @@
 .input-style {
   width: 100%;
   height: 30px;
+  padding: 10px;
   background-color: transparent;
   border: 2px solid #d9d9d9;
+  font-family: "Poppins";
 }
