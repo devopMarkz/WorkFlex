@@ -14,13 +14,12 @@
 /* Container do formulario */
 .form-container {
   display: grid;
-  grid-template-areas: 
-  "nome nome"
-  "email email"
-  "idade peso"
-  "altura genero"
-  "funcionario funcionario"
-  ;
+  grid-template-areas:
+    "nome nome"
+    "email email"
+    "idade peso"
+    "altura genero"
+    "funcionario funcionario";
   gap: 10px;
 }
 
