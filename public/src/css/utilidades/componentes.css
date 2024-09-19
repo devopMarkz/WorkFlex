@@ -1,0 +1,80 @@
+/* Tela Mobile (container geral) */
+.container-global {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Tela fica limitada a 500px para apresentacão do aplicativo em qualquer outra tela, seja tablet, windows, etc... */
+@media (min-width: 1000px) {
+  .container-global,
+  .nav-inferior {
+    max-width: 500px;
+  }
+}
+
+/* estilo padrao dos botões do site */
+.btn {
+  margin-top: 28px;
+  width: 140px;
+  height: 30px;
+  background-color: var(--cor-p7);
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--cor-p9);
+  transition: 0.2s;
+}
+
+/* Container geral do layout das paginas de pausa */
+.container-pausas {
+  display: grid;
+  height: 70vh;
+  justify-items: center;
+  align-content: center;
+  margin: 20px auto;
+}
+
+/* Container dos videos do site */
+.video-pausas {
+  width: max-content;
+  height: 240px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* Estilização do subtitulo das paginas */
+.subtitulo-pausas {
+  padding-top: 10px;
+  max-width: 40ch;
+  text-align: center;
+}
+
+/* Container da descrição do conteudo das paginas */
+.conteudo-pausas {
+  overflow-y: scroll;
+  max-height: 80px;
+  margin: 30px auto;
+}
+
+/* Alinhamento da descrição */
+.descricao {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.enviar-btn {
+  width: 140px;
+  height: 30px;
+  background-color: var(--cor-p7);
+  border-radius: 60px;
+  border: none;
+}
+
+.enviar-btn:hover {
+  background-color: var(--cor-p9);
+  transition: 0.2s;
+}
