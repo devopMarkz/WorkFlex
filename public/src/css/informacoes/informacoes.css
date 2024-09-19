@@ -21,6 +21,7 @@
     "altura genero"
     "funcionario funcionario";
   gap: 10px;
+  margin: 0 20px;
 }
 
 .form-container label {
