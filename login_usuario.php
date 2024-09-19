@@ -5,18 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"]; // Captura o email do formulário
     $senha = $_POST["senha"]; // Captura a senha do formulário
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "workflex";
-
-    // Criar conexão
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Verificar a conexão
-    if ($conn->connect_error) {
-        die("Erro ao conectar ao banco de dados: " . $conn->connect_error);
-    }
+    include 'db_connection.php';
 
     // Consulta para buscar o usuário pelo email (ajuste no nome da coluna)
     $sql = "SELECT * FROM Usuario WHERE Email = ?"; // Campo 'Email' com letra maiúscula

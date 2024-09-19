@@ -1,10 +1,5 @@
 <?php
-// Conexão com o banco de dados
-$mysqli = new mysqli("localhost", "root", "", "WorkFlex");
-
-if ($mysqli->connect_error) {
-    die("Falha na conexão: " . $mysqli->connect_error);
-}
+include '../db_connection.php';
 
 // Verificar se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

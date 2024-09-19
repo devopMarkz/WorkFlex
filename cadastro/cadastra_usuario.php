@@ -1,4 +1,5 @@
 <?php
+
 // Verifica se o formulário foi submetido usando o método POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Captura os dados enviados pelo formulário
@@ -11,22 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
+    include '../db_connection.php';
+
     // Converter altura para formato decimal (4,2)
     $altura = number_format((float) str_replace(',', '.', $altura), 2, '.', '');
-
-    // Configurações de conexão com o banco de dados
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "workflex";
-
-    // Cria a conexão com o banco de dados usando MySQLi
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Verifica a conexão com o banco de dados
-    if ($conn->connect_error) {
-        die("Erro na conexão com o banco de dados: " . $conn->connect_error);
-    }
 
     // Verifica se o email já existe na tabela Usuario
     $query = "SELECT email FROM Usuario WHERE email = ?";
