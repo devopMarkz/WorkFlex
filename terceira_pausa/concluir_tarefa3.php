@@ -1,11 +1,11 @@
 <?php
-
 include '../db_connection.php';
 
-$tarefaId = 1;
+// Definir o ID da tarefa
+$tarefaId = 3;
 
+// Atualizar o status da tarefa no banco de dados
 $sql = "UPDATE Tarefa SET Status_Tarefa = 1 WHERE id_Tarefa = ?";
-
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $tarefaId);
 
@@ -17,5 +17,4 @@ if ($stmt->execute()) {
 
 $stmt->close();
 $conn->close();
-
 ?>
