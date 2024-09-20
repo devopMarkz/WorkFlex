@@ -149,7 +149,7 @@
     </section>
   </main>
   
-  <footer>
+  <footer class="container-global">
     <nav class="nav-bg nav-inferior">
       <ul class="menu-inferior">
         <a href="../user_infos/informacoes.html">

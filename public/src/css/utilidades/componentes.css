@@ -1,0 +1,78 @@
+/* Tela Mobile - Container geral das paginas */
+.container-global {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .container-global, .nav-inferior {
+    max-width: 500px;
+  }
+}
+
+/* Estilização geral dos btns do projeto */
+.btn {
+  margin-top: 28px;
+  width: 140px;
+  height: 30px;
+  background-color: var(--cor-p7);
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--cor-p9);
+  transition: 0.2s;
+}
+
+/* Container das pausas do projeto */
+.container-pausas {
+  display: grid;
+  height: 70vh;
+  justify-items: center;
+  align-content: center;
+  margin: 20px auto;
+}
+
+/* Container dos videos das paginas de pausa */
+.video-pausas {
+  max-width: 400px;
+  height: 240px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* Alinhamento do subtitulo das pausas */
+.subtitulo-pausas {
+  padding-top: 20px;
+  max-width: 40ch;
+  text-align: center;
+}
+
+/* Container contendo a descricao das pausas */
+.conteudo-pausas {
+  overflow-y: scroll;
+  max-height: 80px;
+  margin: 30px auto;
+}
+
+/* Alinhamento das pausas dentro do container */
+.descricao-pausas {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.enviar-btn {
+  width: 140px;
+  height: 30px;
+  background-color: var(--cor-p7);
+  border-radius: 60px;
+  border: none;
+}
+
+.enviar-btn:hover {
+  background-color: var(--cor-p9);
+  transition: 0.2s;
+}

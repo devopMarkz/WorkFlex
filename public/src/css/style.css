@@ -8,13 +8,13 @@
 
 @import "./utilidades/cores.css";
 @import "./utilidades/tipografias.css";
+@import "./utilidades/componentes.css";
 
 /* Paginas */
 
 @import "./login/login.css";
 @import "./cadastro/cadastro.css";
 @import "./recover/recovery.css";
-@import "./alongamento/alongamento.css";
 @import "./informacoes/informacoes.css";
 @import "./aviso/aviso.css";
 @import "./progresso/progresso.css";

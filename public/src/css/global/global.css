@@ -38,31 +38,3 @@ img {
   height: auto;
   display: block;
 }
-
-/* Tela Mobile */
-.container {
-  box-sizing: border-box;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-@media (min-width: 1000px) {
-  .container, .nav-inferior {
-    max-width: 500px;
-  }
-}
-
-.btn {
-  margin-top: 28px;
-  width: 140px;
-  height: 30px;
-  background-color: var(--cor-p7);
-  border-radius: 60px;
-  border: none;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: var(--cor-p9);
-  transition: 0.2s;
-}
