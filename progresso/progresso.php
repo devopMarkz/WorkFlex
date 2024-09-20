@@ -30,7 +30,7 @@
   }
   ?>
 
-  <header class="container">
+  <header class="container-global">
     <nav class="nav-bg">
       <ul class="menu-superior">
         <a href="../primeira_pausa/aviso.html" class="menu-s-item font-2-s cor-p0">
@@ -56,7 +56,7 @@
     </nav>
   </header>
   
-  <main class="container">
+  <main class="container-global">
     <section class="progresso-container">
       <h1 class="progresso-titulo font-1-m-b">Progresso</h1>
 
@@ -67,7 +67,7 @@
                 <img src="../public/assets/icons/lotus-flower-icon.svg" alt="">
                 <div>
                   <span class="progresso-span font-1-s-b">1ª Pausa</span>
-                  <div class="progresso-barra completo"></div>
+                  <div class="progresso-barra"></div>
                 </div>
                 <span class="progresso-porcentagem font-1-s-b">100%</span>
               </div>';
