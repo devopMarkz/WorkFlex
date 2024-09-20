@@ -11,7 +11,7 @@
   <title>WorkFlex - Progresso</title>
 </head>
 
-<body class="container">
+<body class="container-global">
   <?php
   // Inclui a conexão com o banco de dados
   include '../db_connection.php';
@@ -49,6 +49,7 @@
         <a href="#">
           <li><img src="../public/assets/icons/seta-esquerda.svg" alt="" width="18" height="18"></li>
         </a>
+        <span class="font-1-m-b cor-p2">Progresso</span>
         <a href="../primeira_pausa/alongamento.html">
           <li><img src="../public/assets/icons/seta-direita.svg" alt="" width="18" height="18"></li>
         </a>
@@ -58,7 +59,6 @@
   
   <main class="container-global">
     <section class="progresso-container">
-      <h1 class="progresso-titulo font-1-m-b">Progresso</h1>
 
       <?php
       // Pausa 1
