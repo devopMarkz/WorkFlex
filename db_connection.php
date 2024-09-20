@@ -3,7 +3,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "aluno";
 $dbname = "workflex";
 
 // Criar conexão
