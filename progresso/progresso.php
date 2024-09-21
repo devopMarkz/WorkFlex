@@ -66,7 +66,7 @@
                 <img src="../public/assets/icons/lotus-flower-icon.svg" alt="">
                 <div>
                   <span class="progresso-span font-1-s-b">1ª Pausa</span>
-                  <div class="progresso-barra"></div>
+                  <div class="progresso-barra completo"></div>
                 </div>
                 <span class="progresso-porcentagem font-1-s-b">100%</span>
               </div>';
