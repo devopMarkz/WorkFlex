@@ -168,6 +168,7 @@
   </footer>
   
   <script type="module" src="../scripts/script.js"></script>
+  <script src="../scripts/alertas.js"></script>
 </body>
 
 </html>
