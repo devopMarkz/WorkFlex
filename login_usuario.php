@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['tipo_usuario'] = $usuario['Tipo_Usuario_idTipoUsuario']; // Tipo de usuário (Aprendiz ou Efetivo)
 
             // Senha correta - redirecionar para a página "alongamento.html" com caminho relativo
-            header("Location: ./primeira_pausa/alongamento.html");
+            header("Location: ./primeira_pausa/meditacao.html");
             exit();
         } else {
             // Senha incorreta
