@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../public/src/css/style.css">
   <title>WorkFlex - Água</title>
 </head>
@@ -43,19 +43,19 @@
       <div class="percent">
         <svg>
           <circle cx="70" cy="70" r="70"></circle>
-          <circle cx="70" cy="70" r="70"></circle>
+          <circle id="progress-circle" cx="70" cy="70" r="70"></circle>
         </svg>
         <div class="number">
-          <h2 class="font-1-s">25<span>%</span></h2>
+          <h2 id="percent-value" class="font-1-s">0<span>%</span></h2>
         </div>
       </div>
-      <h2 class="text font-1-m">Progress</h2>
+      <h2 class="text font-1-m">Progresso</h2>
     </div>
     <form action="consumir_agua.php" method="POST" class="agua-form">
       <span class="font-1-s">Informe a quantidade de água que você consumiu</span>
       <input type="number" class="agua-input font-1-s" id="agua-ml" name="agua-ml" placeholder="ML">
       <input type="submit" class="btn font-1-s cor-p0" value="Enviar">
-  </form>
+    </form>
   </main>
   <footer class="container-global">
     <nav class="nav-bg nav-inferior">
@@ -76,6 +76,9 @@
     </nav>
   </footer>
   <script type="module" src="../scripts/script.js"></script>
+    <!-- Script para buscar o consumo de água e atualizar o círculo -->
+    <script src="agua.js"></script>
+
 </body>
 
 </html>
