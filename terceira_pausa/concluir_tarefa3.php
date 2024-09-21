@@ -10,9 +10,9 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $tarefaId);
 
 if ($stmt->execute()) {
-    echo "<script>alert('Tarefa concluída com sucesso!'); window.location.href = './alongamento.html';</script>";
+    echo "<script>alert('Tarefa concluída com sucesso!'); window.location.href = './meditacao.html';</script>";
 } else {
-    echo "<script>alert('Erro ao concluir a tarefa. Por favor, tente novamente.'); window.location.href = './alongamento.html';</script>";
+    echo "<script>alert('Erro ao concluir a tarefa. Por favor, tente novamente.'); window.location.href = './meditacao.html';</script>";
 }
 
 $stmt->close();
